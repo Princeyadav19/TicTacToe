@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>tictactoe</title>
+</head>
+<body>
+    <div class="container d-flex flex-column mt-lg-2">
+        <div class="row">
+            <h3>Tic Tac Toe</h3>
+        </div>
+        <div class="row d-flex mt-lg-5 justify-content-center">
+            <div class="col-lg-10 d-flex justify-content-center flex-row">
+                <div class="col-lg-8 d-flex">
+                    <table>
+                        <tr>
+                            <td class="cell border-bottom border-end" id="0"></td>
+                            <td class="cell border-bottom border-start border-end" id="1"></td>
+                            <td class="cell border-bottom border-start " id="2"></td>
+                        </tr>
+                        <tr>
+                            <td class="cell  border-bottom border-top border-end" id="3"></td>
+                            <td class="cell  border-bottom border-start border-top border-end" id="4"></td>
+                            <td class="cell  border-bottom border-start border-top" id="5"></td>
+                        </tr>
+                        <tr>
+                            <td class="cell  border-top border-end" id="6"></td>
+                            <td class="cell  border-top border-start border-end" id="7"></td>
+                            <td class="cell  border-start border-top" id="8"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="row col-lg-4 d-flex flex-row">
+                    <div class="row d-flex ">
+                        <i class="fa-solid fa-user"><span class="ms-lg-1">User: O</span></i>
+                    </div>
+                    <div class="row d-flex">
+                        <i class="fa-solid fa-computer"><span class="ms-lg-1">Computer: X</span></i>
+                    </div>
+               </div>
+                
+            </div>   
+        </div>       
+        <div class="row d-flex mt-lg-5 p-lg-3">
+            <div class="col-lg-2">
+                 <button type="button" onclick="startGame()"class="btn btn-success">Replay</button>
+            </div>
+        </div> 
+    
+    <div class="endgame">
+        <div class="text"></div>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
